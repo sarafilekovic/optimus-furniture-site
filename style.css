@@ -6,6 +6,7 @@
   --optimus-green: #b4c337;
   --optimus-gray-one: #4d4e50;
   --optimus-gray-two: #414244;
+  --optimus-gray-light: #e6e6e7;
   --optimus-font: 'Lato', sans-serif;
 }
 
@@ -66,6 +67,110 @@ header {
   display: none;
 }
 
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, var(--optimus-violet) 50%, white 50%);
+}
+
+.intro-text {
+  color: var(--optimus-gray-one);
+  text-align: center;
+  line-height: 1.6;
+  padding: 100px;
+  position: relative;
+  right: 50px;
+}
+
+.intro-text > h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.intro-text > h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+#intro-contact-button {
+  margin: 30px;
+  padding: 20px 15px;
+  font-family: var(--optimus-font);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--optimus-green);
+  color: white;
+}
+
+.intro-img {
+  max-width: 50%;
+}
+
+#intro-img-sofa {
+  max-width: 100%;
+  height: auto;
+}
+
+#slideshow {
+  background-color: var(--optimus-gray-light);
+}
+
+#optimusCarousel {
+  max-width: 70%;
+  margin: auto;
+}
+
+button[data-bs-target="#optimusCarousel"] {
+  background-color: var(--optimus-gray-light);
+}
+
+button[data-bs-target="#optimusCarousel"]:hover {
+  background-color: var(--optimus-gray-one);
+}
+
+#special-offers-section {
+  color: var(--optimus-gray-two);
+}
+
+#special-offers-section > h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.special-offers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.special-offer {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.special-offer > p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.offer-icons > i {
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
 
@@ -97,6 +202,44 @@ header {
 
   nav .hamburger-menu {
     display: block;
+  }
+
+  .intro-section {
+    background: var(--optimus-violet);
+    flex-direction: column;
+  }
+
+  .intro-text {
+  color: var(--optimus-gray-two);
+  text-align: center;
+  line-height: 1.6;
+  padding: 30px;
+  position: relative;
+  left: 5px;
+  }
+
+  .intro-text > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  }
+
+  .intro-text > h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  }
+
+  #intro-img-sofa {
+  display: none;
+  }
+
+  #intro-contact-button {
+  background-color: black;
+  color: white;
+  }
+
+  .special-offers-container {
+    flex-direction: column;
   }
 
 }
