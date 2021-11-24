@@ -171,6 +171,43 @@ button[data-bs-target="#optimusCarousel"]:hover {
   display: block;
 }
 
+#testimonials {
+  background-color: var(--optimus-gray-light);
+}
+
+#testimonials > h3 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 60px;
+}
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  max-width: 50%;
+  padding: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.3rem;
+  display: none;
+}
+
+#prevButton, #nextButton {
+  border: none;
+  background: none;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+#prevButton:hover, #nextButton:hover {
+  color: var(--optimus-green);
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
 
@@ -240,6 +277,10 @@ button[data-bs-target="#optimusCarousel"]:hover {
 
   .special-offers-container {
     flex-direction: column;
+  }
+
+  .testimonial {
+    max-width: 100%;
   }
 
 }
