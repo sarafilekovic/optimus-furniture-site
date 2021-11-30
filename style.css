@@ -127,6 +127,10 @@ header {
   background-color: var(--optimus-gray-light);
 }
 
+.carousel-item {
+  height: 600px;
+}
+
 #optimusCarousel {
   max-width: 70%;
   margin: auto;
@@ -340,6 +344,10 @@ hr {
   #intro-contact-button {
   background-color: black;
   color: white;
+  }
+
+  .carousel-item {
+    height: 200px;
   }
 
   .special-offers-container {
