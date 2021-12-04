@@ -38,8 +38,36 @@
         </nav>
     </header>
     <section class="contact-section">
+      <div class="contact-section-container">
       <div class="contact-wrapper">
-        <p>contact content here...</p>
+        <h4>Kontaktirajte nas</h4>
+        <hr>
+        <div class="contact-phone">
+          <i class="bi bi-telephone"></i>
+          <p>033 849-309</p>
+        </div>
+        <div class="contact-address">
+          <i class="bi bi-geo-alt"></i>
+          <p>Moševićka 125, Podlugovi 71387</p>
+        </div>
+        <div class="contact-mail">
+          <i class="bi bi-envelope"></i>
+          <p>optimus_sarajevo@outlook.com</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="mailto:optimus_sarajevo@outlook.com">
+          <label for="name">Ime:</label>
+          <input type="text" id="fname" name="firstName" placeholder="Ime">
+          <label for="surname">Prezime:</label>
+          <input type="text" id="lname" name="lastName" placeholder="Prezime">
+          <label for="email">E-mail adresa:</label>
+          <input type="email" id="email" name="email" placeholder="E-mail">
+          <label for="formMessage">Poruka:</label>
+          <textarea name="form-message" id="formMessage" cols="50" rows="6" placeholder="Poruka..."></textarea>
+          <input type="submit" value="Pošalji">
+        </form>
+      </div>
       </div>
     </section>
     <footer>

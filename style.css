@@ -233,7 +233,7 @@ footer {
   font-size: 1.2rem;
 }
 
-hr {
+footer > hr {
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -307,6 +307,80 @@ hr {
   padding-top: 30px;
   padding-right: 100px;
   font-size: 1rem;
+}
+
+.contact-section {
+  background-color: var(--optimus-gray-light);
+  padding: 50px;
+}
+
+.contact-section-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 5px 5px gray;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.contact-wrapper {
+  background-color: var(--optimus-green);
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact-wrapper > hr {
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.contact-wrapper > h4 {
+  text-align: center;
+}
+
+.contact-phone, .contact-address, .contact-mail {
+  display: flex;
+  margin: 30px 20px;
+}
+
+.contact-form {
+  background-color: var(--optimus-violet);
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.contact-form > form > label {
+  font-weight: 700;
+}
+
+.contact-form > label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form > label, input[type="text"], input[type="email"], textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid var(--optimus-gray-light);
+  border-radius: 6px;
+}
+
+.contact-phone > i, .contact-address > i, .contact-mail > i {
+  padding-right: 20px;
+}
+
+.contact-form > form > input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form > form > input[type=submit]:hover {
+  background-color: var(--optimus-green);
 }
 
 /* media queries */
@@ -395,6 +469,14 @@ hr {
 
   .about-us-text > blockquote {
     padding-right: 0;
+  }
+
+  .contact-section-container {
+    flex-direction: column;
+  }
+
+  .contact-wrapper > hr {
+    display: none;
   }
 
 }
