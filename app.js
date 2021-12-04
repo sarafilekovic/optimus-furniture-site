@@ -43,7 +43,11 @@ prev.addEventListener('click', () => {
   changeSlides(-1);
 });
 
+const contactButton = document.getElementById('intro-contact-button');
 
+contactButton.addEventListener('click', () => {
+  window.location.href = 'contact.html';
+});
 
 
 

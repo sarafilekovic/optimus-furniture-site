@@ -24,6 +24,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#home-h {
   background: linear-gradient(to left, var(--optimus-violet) 50%, white 50%);
 }
 
@@ -48,7 +51,7 @@ header {
 }
 
 .nav-link:hover {
-  color: white;
+  color: var(--optimus-gray-light);
 }
 
 .hamburger-menu {
@@ -279,10 +282,37 @@ hr {
   font-size: 1rem;
 }
 
+.about-us {
+  background-color: var(--optimus-gray-light);
+  padding: 30px 50px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.about-us-text > h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2rem;
+}
+
+.about-us-text > p {
+  font-size: 1.1rem;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.about-us-text > blockquote {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 100px;
+  font-size: 1rem;
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
 
-  header {
+  header, #home-h {
     background: white;
   }
 
@@ -356,6 +386,15 @@ hr {
 
   .testimonial {
     max-width: 100%;
+  }
+
+  .about-us-text > p {
+   padding-left: 0;
+   padding-right: 0;
+  }
+
+  .about-us-text > blockquote {
+    padding-right: 0;
   }
 
 }
