@@ -404,6 +404,116 @@ footer > hr {
   text-align: center;
 }
 
+/* products page */
+
+.products-section > .categories {
+  background-color: var(--optimus-gray-two);
+  padding: 30px;
+}
+
+.products-section > .categories > .products-h2 > h2 {
+  font-size: 2.5rem;
+  color: var(--optimus-violet);
+  text-align: center;
+  letter-spacing: 5px
+}
+
+.products-h2 {
+  padding-bottom: 70px;
+}
+
+.products-categories-list {
+  padding: 0 100px;
+}
+
+.products-categories-list > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: square;
+  color: var(--optimus-gray-light);
+}
+
+.products-categories-list > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.products-categories-list > ul > li > a:hover {
+  color: var(--optimus-green);
+}
+
+.products-displayed {
+  background-color: white;
+  padding: 25px;
+  display: flex;
+}
+
+.product-categories-sidebar {
+  position: sticky;
+  top: 50px;
+  margin-right: 100px;
+  align-self: flex-start;
+}
+
+.products-displayed > .product-categories-sidebar > h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.products-displayed > .product-categories-sidebar > ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.products-displayed > .product-categories-sidebar > ul > li > a {
+  color: var(--optimus-gray-two);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.products-displayed > .product-categories-sidebar > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.product-display-div {
+  margin: 10px;
+}
+
+.product-display-div > p {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.product-display-img {
+  box-shadow: 5px 5px 5px var(--optimus-gray-light);;
+}
+
+#kreveti {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#krevetLeo {
+  width: 400px;
+  height: 408px;
+  margin: 0 auto;
+  display: block;
+}
+
+#krevetSpirit {
+  width: 400px;
+  height: 408px;
+  margin: 0 auto;
+  display: block;
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
 
@@ -517,6 +627,23 @@ footer > hr {
 
   .contact-wrapper > hr {
     display: none;
+  }
+
+  .products-categories-list > ul {
+    flex-direction: column;
+  }
+
+  .products-h2 {
+    padding-bottom: 50px;
+  }
+
+  .product-categories-sidebar {
+    display: none;
+  }
+
+  #kreveti {
+    display: flex;
+    flex-direction: column;
   }
 
 }
