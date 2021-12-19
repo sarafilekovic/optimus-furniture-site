@@ -49,5 +49,14 @@ contactButton.addEventListener('click', () => {
   window.location.href = 'contact.html';
 });
 
+function changeOriginalImg() {
+  document.getElementById('bigImg').src = document.getElementsByClassName('additional-img')[0].src;
+}
 
+function changeSecondImg() {
+ document.getElementById('bigImg').src = document.getElementsByClassName('additional-img')[1].src;
+}
 
+function changeThirdImg() {
+  document.getElementById('bigImg').src = document.getElementsByClassName('additional-img')[2].src;
+}

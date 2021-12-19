@@ -500,18 +500,30 @@ footer > hr {
   grid-template-columns: 1fr 1fr;
 }
 
-#krevetLeo {
-  width: 400px;
-  height: 408px;
+.product-display-img > a > img {
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-#krevetSpirit {
-  width: 400px;
+#krevetLeo, #krevetSpirit {
+  max-width: 400px;
   height: 408px;
-  margin: 0 auto;
-  display: block;
+}
+
+#lezaji {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#lezajStella, #lezajLotos {
+  max-width: 400px;
+  height: 408px;
+}
+
+#lezajLiberi {
+  max-width: 400px;
+  height: 300px;
 }
 
 /* media queries */
@@ -642,8 +654,13 @@ footer > hr {
   }
 
   #kreveti {
+      display: flex;
+      flex-direction: column;
+  }
+
+  #lezaji {
     display: flex;
     flex-direction: column;
   }
-
+  
 }
