@@ -20,6 +20,11 @@
   cursor: pointer;
 }
 
+.additional-img-col > img {
+  height: 150px;
+  object-fit: cover;
+}
+
 #product-details-div > h3 {
   font-weight: 700;
 }
