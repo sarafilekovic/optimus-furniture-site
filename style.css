@@ -526,6 +526,26 @@ footer > hr {
   height: 300px;
 }
 
+#ugaone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#trosjedi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#trosjedUna {
+  max-width: 400px;
+  height: 408px;
+}
+
+#trosjedZefira {
+  max-width: 500px;
+  height: 408px;
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
 
@@ -659,6 +679,16 @@ footer > hr {
   }
 
   #lezaji {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ugaone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #trosjedi {
     display: flex;
     flex-direction: column;
   }
