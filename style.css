@@ -506,24 +506,9 @@ footer > hr {
   display: block;
 }
 
-#krevetLeo, #krevetSpirit {
-  max-width: 400px;
-  height: 408px;
-}
-
 #lezaji {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-#lezajStella, #lezajLotos {
-  max-width: 400px;
-  height: 408px;
-}
-
-#lezajLiberi {
-  max-width: 400px;
-  height: 300px;
 }
 
 #ugaone {
@@ -534,16 +519,6 @@ footer > hr {
 #trosjedi {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-#trosjedUna {
-  max-width: 400px;
-  height: 408px;
-}
-
-#trosjedZefira {
-  max-width: 500px;
-  height: 408px;
 }
 
 /* media queries */
